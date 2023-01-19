@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+<title>Infinite Monkey Theorem</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google" content="notranslate">
+<link rel="icon" href="favicon.ico">
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<script src="scripts.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header>
+	<div class="logo"></div>
+	<h1>Infinite Monkey Theorem</h1>
+</header>
+
+<main id="tabs">
+	<nav>
+		<ul>
+			<li><a href="#1">Home</a></li>
+			<li><a href="#2">Show me my Monkey Theorem!</a></li>
+			<li><a href="#3">Who is Emile Borel</a></li>
+			<li><a href="#4">What's with Shakespeare?</a></li>
+			<li><a href="#5">Fun Facts</a></li>
+			<li><a href="#6">About Us</a></li>
+			<li><a href="#7">PyScript</a></li>
+		</ul>
+	</nav>
+
+	<article id="1" class="default">
+		<h2>Infinite Monkey Theorem</h2>
+		<p>The Infinite Monkey Theorem states that given an infinite amount of time, a monkey randomly hitting keys on a typewriter will eventually produce the complete works of William Shakespeare. The theorem is often used to illustrate the concept of random chance and the likelihood of unlikely events occurring given enough time. It is important to note that the theorem is purely hypothetical and the assumption of an infinite amount of time is unrealistic in the real world.</p>
+		<p>Want to learn more about the Infinite Monkey Theorem? Read <a href="https://en.wikipedia.org/wiki/Infinite_monkey_theorem" target="_blank">https://en.wikipedia.org/wiki/Infinite_monkey_theorem</a></p>
+	</article>
+
+	<article id="2">
+		
+		<h2>Show me my Monkey Theorem!</h2>
+		<p>The mathematical formula on this Theorem is stated below. This formula is used to calculate the probability. This shows the chance a word is typed directly from the beginning.</p>
+		<p>The formula is <img src="chances_are.svg"></p>
+		<p>Type your desired word <input type="text" id="matchWords" name="matchWords"></p>
+		<p id="chancesAre"></p>
+		<p id="chancesAreNot"></p>
+
+		<section id="part1">
+			<p>Will your chosed word occur in a randomly typed amount of characters?</p>
+			<p>Type your desired amount of characters <input type="text" id="characterCount" name="characterCount"></p>
+		</section>
+		<section id="part2">
+			<p>Type your the word you want to find <input type="text" id="matchWords2" name="matchWords2"></p>
+		</section>
+		<p id="occurences"></p>
+		<p id="generated"></p>
+	</article>
+
+	<article id="3">
+		<h2>Who is Emile Borel?</h2> 
+		<img src="borel.svg">
+		<p>Émile Borel was a French mathematician and politician who lived in the late 19th and early 20th centuries. He is known for his work in measure theory, topology, and game theory. He is particularly famous for his formulation of the Infinite Monkey Theorem, which states that if an infinite number of monkeys were given an infinite amount of time to randomly type on a typewriter, they would eventually produce the complete works of William Shakespeare.
+		<p>Borel also served as a member of the French National Assembly and was a member of the Académie des Sciences.</p>
+		<p>Want to learn more about Émile Borel? Read <a href="https://en.wikipedia.org/wiki/%C3%89mile_Borel" target="_blank">https://en.wikipedia.org/wiki/%C3%89mile_Borel</a><p>
+	</article>
+	
+	<article id="4">
+		<h2>What's with Shakespeare?</h2>
+		<img src="shakespeare.svg">
+		<p>William Shakespeare is widely considered to be the greatest playwright in the history of the English language. He lived in the late 16th and early 17th centuries, and wrote approximately 39 plays and 154 sonnets, as well as various other poems. His plays are still widely performed and studied today.</p>
+		<p>Want to learn more about Shakespeare? Read <a href="https://en.wikipedia.org/wiki/William_Shakespeare" target="_blank">https://en.wikipedia.org/wiki/William_Shakespeare</a></p>
+		<p>Why was "Shakespeare" chosen in this theorem and why just "Shakespeare" and not only one of his works?</p>
+		<p>Well it isn't as the theorem really reads:</p>
+		<p><quote>The infinite monkey theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text, <b>SUCH</b> as the complete works of William Shakespeare.</quote></p>
+		<p>Meaning they also could produce any other piece of work by any other writer or poet using the latin alphabet.</p>
+	</article>
+
+	<article id="5">
+		<h2>Fun Facts</h2>
+		<p>The monkey from the infinite monkey theorem would almost surely type every possible finite text an infinite number of times!</p>
+		<p>The probability that monkeys filling the observable universe would type a complete work such as Shakespeare's Hamlet is so tiny that the chance of it occurring during a period of time hundreds of thousands of orders of magnitude longer than the age of the universe is extremely low (but technically not zero).</p>
+		<p>The chances of a monkey actually typing a text, like Shakespeare's Hamlet, are very small. In fact, there is less than a one in a trillion chance of success that such a universe made of monkeys could type any particular document a mere 79 characters long.</p>
+		<p>In The Simpsons episode "Last Exit to Springfield," Mr. Burns shows Homer "a room with a thousand monkeys on a thousand typewriters. Soon they will have written the greatest novel known to man!"</p>
+		<p>In his 1978 radio play, The Hitchhiker's Guide to the Galaxy, Douglas Adams invoked the theorem to illustrate the power of the 'Infinite Improbability Drive' that powered a spaceship. From Episode 2: "Ford, there's an infinite number of monkeys outside who want to talk to us about this script for Hamlet they've worked out."</p>
+	</article>	
+	
+	<article id="6">
+		<h2>About Us</h2>
+		<img src="thomas.svg">
+		<p><b>Thomas Kyriazopoulos</b></p>
+		<p>Product Owner, IMT-generator development</p>
+		<img src="joel.svg">
+		<p><b>Joel Ruiz</b></p>
+		<p>Scrum Master, Probability development</p>
+		<img src="casimir.svg">
+		<p><b>Casimir Tijhuis</b></p>
+		<p>Developer, Website, IMT-generator and probability development</p>
+		<img src="wouter.svg">
+		<p><b>Wouter Groeneweg</b></p>
+		<p>Developer, Website, IMT-generator and design development</p>
+	</article>
+	
+	<article id="7">
+		<p>When we started developing this website we thought to develop the interactive generator in Py Script. This appeared to be very difficult to combine with the HTML elements in the website.</p>
+		<p>We were advised to rewrite our code into Javascript/jQuery. jQuery is a Javascript library. This allowed us to write less code since the most is already taken care of in jQuery.</p>
+		<p>However we did manage to create stand alone scripts using Py Script. These scripts generate a string of random characters and immediately detects all the words of the English dictionary within this string. We have two versions, one without a character ranking and one with a character ranking based on the frequency of use in the English Language. </p>
+		<p><a href="aap_woordgenerator_woorddetectie.html" target="_blank">aap_woordgenerator_woorddetectie.html</a></p>
+		<p><a href="engelse_letterfrequentie_woordgenerator_woorddetectie.html" target="_blank">engels_woordgenerator_woorddetectie.html</a></p>
+		
+	</article>
+
+</main>
+
+<footer>
+<p>&#169; 2023</p>
+</footer>
+
+</body>
+</html>
